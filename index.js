@@ -48,8 +48,6 @@ const idMaker = () => {
   
   app.get('/api/persons', (request, response) => {
     response.json(persons)
-    id = idMaker()
-    console.log(id)
   })
 
   app.delete('/api/persons/:id', (request, response) => {
